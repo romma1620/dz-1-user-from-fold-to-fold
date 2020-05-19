@@ -1,7 +1,0 @@
-age: 22 
-
-          name: kate.txt 
- 
-          group: 18:00 
-
-        

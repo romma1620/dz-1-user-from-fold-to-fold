@@ -1,7 +1,0 @@
-age: 21 
-
-          name: andriy.txt 
- 
-          group: 18:00 
-
-        

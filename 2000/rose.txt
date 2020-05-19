@@ -1,7 +1,0 @@
-age: 15 
-
-          name: rose.txt 
- 
-          group: 18:00 
-
-        

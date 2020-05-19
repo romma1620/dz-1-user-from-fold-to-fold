@@ -35,24 +35,21 @@ for (let i = 0; i < arr2.length ; i++) {
 
 /*      move users       */
 
-function moveUser(file, fold) {
-    let name = path.basename(file);
-    let dest = path.resolve(fold, name);
+function moveUser(source, dest) {
+    const files = fs.readdirSync(source);
 
-    fs.rename(file, dest , (err => {
-        if(err){
-            console.log('not moved')
-        }
-        else
-        console.log('successfully moved')
-    }));
-
+    for (const file of files) {
+        fs.rename(source + '/' + file, dest + '/' + file, err => {
+            if (err) {
+                console.log('not moved')
+            } else {
+                console.log('moved')
+            }
+        })
+    }
 }
 
-moveUser('./2000/nata.txt', './1800');
-moveUser('./2000/arthur.txt', './1800');
-moveUser('./2000/vasya.txt', './1800');
-moveUser('./1800/andriy.txt', './2000');
-moveUser('./1800/kate.txt', './2000');
-moveUser('./1800/rose.txt', './2000');
+moveUser('./1800', './buffer');
+moveUser('./2000', './1800');
+moveUser('./buffer', './2000');
 
