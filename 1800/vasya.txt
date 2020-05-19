@@ -1,0 +1,7 @@
+age: 18 
+
+          name: vasya.txt 
+
+          group: 20:00 
+ 
+        
