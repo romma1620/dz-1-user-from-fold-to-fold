@@ -1,0 +1,7 @@
+age: 18 
+
+          name: nata.txt 
+
+          group: 20:00 
+ 
+        

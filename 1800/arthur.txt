@@ -1,0 +1,7 @@
+age: 19 
+
+          name: arthur.txt 
+
+          group: 20:00 
+ 
+        

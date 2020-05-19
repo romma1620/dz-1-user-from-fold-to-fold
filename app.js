@@ -49,6 +49,7 @@ function moveUser(source, dest) {
     }
 }
 
+/*      moving      */
 moveUser('./1800', './buffer');
 moveUser('./2000', './1800');
 moveUser('./buffer', './2000');
